@@ -5,8 +5,6 @@ export default function GeocodeForm() {
   const { globalState, setGlobalState } = useAppState();
 
   const [endereco, setEndereco] = useState<string>("");
-  const [latitudeValue, setLatitudeValue] = useState<number>(0);
-  const [longitudeValue, setLongitudeValue] = useState<number>(0);
 
   const consultarLatLong = async () => {
     try {
@@ -22,27 +20,14 @@ export default function GeocodeForm() {
 
       const response = await fetch(url, options);
       const data = await response.json();
-      console.log(data);
 
-      if (data.length > 0) {
-        const resultado = data[0];
-        setLatitudeValue(resultado.latitudeValue);
-        setLongitudeValue(resultado.longitude);
-      } else {
-        console.error("Endereço não encontrado.");
-        setLatitudeValue(-22.896998);
-        setLongitudeValue(-43.106464);
-      }
-
-      setGlobalState((prevState: number[]) => ({
+      setGlobalState((prevState: any) => ({
         ...prevState,
-        latitude: latitudeValue,
-        longitudeValue: longitudeValue,
+        latitude: data.latitude ?? -22.896998,
+        longitude: data.longitude ?? -43.106464,
       }));
     } catch (error) {
       console.error("Ocorreu um erro ao buscar as coordenadas:", error);
-      setLatitudeValue(-22.896998);
-      setLongitudeValue(-43.106464);
     }
   };
 
