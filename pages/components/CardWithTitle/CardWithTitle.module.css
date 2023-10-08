@@ -1,0 +1,25 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 627px;
+}
+
+.title {
+    font-size: 19px;
+    font-weight: 600;
+    padding-bottom: 12px;
+}
+
+.body {
+    text-align: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    padding: 30px 44px;
+}
