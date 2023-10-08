@@ -1,0 +1,14 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 73px;
+    width: 100vw;
+    background: #000000B2;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.logo {
+    width: 131px;
+    height: 51.01px;
+}
