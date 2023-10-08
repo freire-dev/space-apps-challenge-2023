@@ -1,6 +1,6 @@
 .card {
     width: 242px;
-    height: 202px;
+    height: 252px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,6 +26,10 @@
     margin-bottom: 7px;
     width: auto;
     height: 34px;
+}
+
+.cardCategory {
+    text-align: center;
 }
 
 .cardContent {

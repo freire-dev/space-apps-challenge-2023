@@ -21,7 +21,7 @@ export function RecommendationCard(props: RecommendationCardProps) {
           className={styles.cardImage}
           objectFit="height"
         />
-        <text>{props.category}</text>
+        <text className={styles.cardCategory}>{props.category}</text>
       </div>
       <text className={styles.cardContent}>{props.recommendation}</text>
     </div>
