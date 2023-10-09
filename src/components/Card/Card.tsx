@@ -1,5 +1,7 @@
 import styles from "./Card.module.css";
 import { Inter } from "next/font/google";
+import { useSizeScreen } from "@/src/hooks/useSizeScreen";
+
 const inter = Inter({ subsets: ["latin"] });
 
 type CardProps = {
@@ -12,11 +14,13 @@ type CardProps = {
 };
 
 export function Card(props: CardProps) {
+  const { width, height } = useSizeScreen();
   return (
     <div
       className={`${inter.className} & ${styles.card}`}
       style={{
         background: props.color,
+        width: width <= 450 ? "250px" : "189px",
       }}
     >
       <text className={styles.cardTitle}>
