@@ -25,6 +25,7 @@ export default function GeocodeForm() {
         ...prevState,
         latitude: data.latitude ?? -22.896998,
         longitude: data.longitude ?? -43.106464,
+        details: data.latitude && data.longitude ? true : false,
       }));
     } catch (error) {
       console.error("Ocorreu um erro ao buscar as coordenadas:", error);

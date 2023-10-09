@@ -8,7 +8,7 @@ export function AppStateProvider({ children }) {
   const [globalState, setGlobalState] = useState({
     latitude: -22.896998,
     longitude: -43.106464,
-    details: true
+    details: false
   });
 
   return (
