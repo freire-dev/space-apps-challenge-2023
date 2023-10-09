@@ -1,8 +1,10 @@
 import { useAppState } from "@/src/hooks/AppStateContext";
 import { useState, ChangeEvent } from "react";
+import { useSizeScreen } from "@/src/hooks/useSizeScreen";
 
 export default function GeocodeForm() {
   const { globalState, setGlobalState } = useAppState();
+  const { width, height } = useSizeScreen();
 
   const [endereco, setEndereco] = useState<string>("");
 
@@ -37,10 +39,10 @@ export default function GeocodeForm() {
   };
 
   return (
-    <div style={{ width: "40vw", marginTop: 20 }}>
+    <div style={{ width: width <= 525 ? "85vw" : "40vw", marginTop: 20 }}>
       <input
         style={{
-          width: "96%",
+          width: width <= 450 ? "90%" : "96%",
           marginBottom: 5,
           padding: 10,
           borderRadius: 5,
@@ -55,7 +57,7 @@ export default function GeocodeForm() {
       <br />
       <button
         style={{
-          width: "100%",
+          width: width <= 450 ? "97%" : "96%",
           background: "#000000B2",
           padding: 6,
           color: "#fff",
