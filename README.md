@@ -61,3 +61,4 @@ http://localhost:3000/
 - Map: https://react-leaflet.js.org/
 - Data chemical components (with due investment): https://openaq.org/
 - Data with health recommendations against these chemical components (with due investment): https://meersens.com/api/
+- Solution created with AI based on chemical component rates with the aim of reducing critical pollutant rates (with due investment): https://platform.openai.com/docs/introduction
