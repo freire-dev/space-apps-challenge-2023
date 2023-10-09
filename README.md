@@ -2,6 +2,7 @@
 
 - Application name: Smog Detector
 - Application URL: https://sac-ufo-do-rio-2023.vercel.app/
+- Sales pitch: https://1drv.ms/v/s!AlLigQo85_EyhZBMQZHflmfJZvWnKA?e=2UWM13
 - Team: UFO DO RIO (https://www.spaceappschallenge.org/2023/find-a-team/valhalla-team/)
 - Project UI Design: https://www.figma.com/file/fwV5Ll9gREUt7yFj8jTgZC/%5BSAC%5D-UFO-DO-RIO?type=design&node-id=0%3A1&mode=design&t=wAhtHEMULxxPfBzg-1
 - Stack used to develop the application: Next.js
